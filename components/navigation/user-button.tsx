@@ -9,7 +9,7 @@ export const UserButton = ({ user }: Session) => {
   return (
     <>
       <div className="flex justify-center items-center gap-2">
-        <Image  alt={"User Profile"} width={50} height={50} src={user?.image as string}></Image>
+        <Image  alt={"User Profile"} width={50} height={50} src={user?.image as string} className="rounded-full"></Image>
         <Button onClick={()=> signOut()}>Sign Out</Button>
       </div>
     </>

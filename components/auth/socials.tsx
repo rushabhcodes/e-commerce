@@ -2,7 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { signIn } from "next-auth/react";
-import { FaGithub, FaGoogle } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 export default function Socials() {
   return (
@@ -18,7 +19,7 @@ export default function Socials() {
         }}
       >
         SignIn with Google
-        <FaGoogle/>
+        <FcGoogle />
       </Button>
       <Button
         className="flex gap-4 w-full"
@@ -31,7 +32,7 @@ export default function Socials() {
         }}
       >
         SignIn with GitHub
-        <FaGithub/>
+        <FaGithub />
       </Button>
     </div>
   );

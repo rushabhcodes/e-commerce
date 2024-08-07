@@ -13,12 +13,10 @@ export default function BackButton({
   backButtonLabel,
 }: BackButtonProps) {
   return (
-
-      <Button variant={"ghost"} className="font-medium w-full">
-        <Link href={backButtonHref} aria-label={backButtonLabel}>
-          {backButtonLabel}
-        </Link>
-      </Button>
-    
-  );
+    <Button asChild variant={"link"} className="font-medium w-full">
+      <Link href={backButtonHref} aria-label={backButtonLabel}>
+        {backButtonLabel}
+      </Link>
+    </Button>
+  );    
 }
